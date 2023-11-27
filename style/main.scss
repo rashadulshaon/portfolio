@@ -1,0 +1,128 @@
+$primary: #00aa63;
+$secondary: #eee;
+$min-contrast-ratio: 2;
+$border-radius: 1rem;
+$border-radius-sm: .7rem;
+$border-radius-lg: 2rem;
+$font-family-base: 'Nothing', sans-serif;
+$input-btn-padding-x: 1.7rem;
+$input-btn-padding-y: .7rem;
+$input-btn-padding-x-sm: 1rem;
+$input-btn-padding-y-sm: .5rem;
+$input-btn-padding-x-lg: 1.5rem;
+$input-btn-padding-y-lg: .650rem;
+$input-bg: $secondary;
+$input-border-width: 0;
+$input-focus-box-shadow: 0;
+$input-font-weight: bold;
+$btn-hover-border-shade-amount: 0;
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1200px
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/remixicon/fonts/remixicon.css";
+
+body {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.area {
+    padding: 6rem 0;
+}
+
+.theme-border {
+    border: 1px dashed #ccc;
+}
+
+.cover-fit {
+    object-fit: cover;
+}
+
+.main-header {
+    border-bottom: 1px dashed #ccc;
+}
+
+.nav-menu {
+    .active {
+        background-color: $secondary;
+        font-weight: bold;
+    }
+}
+
+.main-header,
+.main-footer {
+    background-color: #ffffffbd;
+    backdrop-filter: blur(20px);
+}
+
+.main-footer,
+.career-timeline {
+    border-top: 1px dashed #ccc;
+}
+
+.career-timeline-content {
+    margin-top: -18px;
+}
+
+.area-heading {
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+.tech-item-divider {
+    color: #ccc;
+}
+
+.scroll-downs {
+    right: 0;
+    left: 0;
+    width: 34px;
+    height: 55px;
+}
+
+.mousey {
+    width: 3px;
+    padding: 5px 10px;
+    height: 25px;
+    border: 2px solid $primary;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: $primary;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+@font-face {
+    src: url(../fonts/Nothing.ttf);
+    font-family: Nothing;
+}
