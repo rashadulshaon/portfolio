@@ -74,9 +74,9 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: "OptimisticDisplay", sans-serif;
+  --bs-body-font-family: "Scandia", sans-serif;
   --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
+  --bs-body-font-weight: 600;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
@@ -105,9 +105,9 @@
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 1rem;
-  --bs-border-radius-sm: 0.7rem;
-  --bs-border-radius-lg: 2rem;
+  --bs-border-radius: 0;
+  --bs-border-radius-sm: 0;
+  --bs-border-radius-lg: 0;
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-xxl: 2rem;
   --bs-border-radius-2xl: var(--bs-border-radius-xxl);
@@ -396,7 +396,7 @@ kbd {
   font-size: 0.875em;
   color: var(--bs-body-bg);
   background-color: var(--bs-body-color);
-  border-radius: 0.7rem;
+  border-radius: 0;
 }
 kbd kbd {
   padding: 0;
@@ -5326,7 +5326,7 @@ textarea.form-control-lg {
   color: var(--bs-btn-close-color);
   background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
   border: 0;
-  border-radius: 1rem;
+  border-radius: 0;
   opacity: var(--bs-btn-close-opacity);
 }
 .btn-close:hover {
@@ -5731,7 +5731,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: "OptimisticDisplay", sans-serif;
+  font-family: "Scandia", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5841,7 +5841,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: "OptimisticDisplay", sans-serif;
+  font-family: "Scandia", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11976,6 +11976,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+i {
+  font-weight: 400;
+}
+
 body {
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -11995,6 +11999,7 @@ body {
 
 .nav-menu .active {
   background-color: #eee;
+  font-weight: bold;
 }
 
 .main-header,
@@ -12032,7 +12037,7 @@ body {
   width: 3px;
   padding: 5px 10px;
   height: 25px;
-  border: 3px solid #00aa63;
+  border: 2px solid #00aa63;
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
@@ -12063,6 +12068,6 @@ body {
   }
 }
 @font-face {
-  src: url(../fonts/optimistic_display.ttf);
-  font-family: OptimisticDisplay;
+  src: url(../fonts/Scandia.ttf);
+  font-family: Scandia;
 }/*# sourceMappingURL=main.css.map */
