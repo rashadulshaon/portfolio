@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -74,7 +75,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: "Nothing", sans-serif;
+  --bs-body-font-family: "OptimisticDisplay", sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -5731,7 +5732,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: "Nothing", sans-serif;
+  font-family: "OptimisticDisplay", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5841,7 +5842,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: "Nothing", sans-serif;
+  font-family: "OptimisticDisplay", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11993,13 +11994,8 @@ body {
      object-fit: cover;
 }
 
-.main-header {
-  border-bottom: 1px dashed #ccc;
-}
-
 .nav-menu .active {
   background-color: #eee;
-  font-weight: bold;
 }
 
 .main-header,
@@ -12009,7 +12005,6 @@ body {
           backdrop-filter: blur(20px);
 }
 
-.main-footer,
 .career-timeline {
   border-top: 1px dashed #ccc;
 }
@@ -12038,7 +12033,7 @@ body {
   width: 3px;
   padding: 5px 10px;
   height: 25px;
-  border: 2px solid #00aa63;
+  border: 3px solid #00aa63;
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
@@ -12069,6 +12064,6 @@ body {
   }
 }
 @font-face {
-  src: url(../fonts/Nothing.ttf);
-  font-family: Nothing;
+  src: url(../fonts/optimistic_display.ttf);
+  font-family: OptimisticDisplay;
 }/*# sourceMappingURL=main.css.map */

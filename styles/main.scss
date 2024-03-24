@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 $primary: #00aa63;
 $secondary: #eee;
 $min-contrast-ratio: 2;
 $border-radius: 1rem;
 $border-radius-sm: .7rem;
 $border-radius-lg: 2rem;
-$font-family-base: 'Nothing', sans-serif;
+$font-family-base: "OptimisticDisplay", sans-serif;
 $input-btn-padding-x: 1.7rem;
 $input-btn-padding-y: .7rem;
 $input-btn-padding-x-sm: 1rem;
@@ -42,14 +43,10 @@ body {
     object-fit: cover;
 }
 
-.main-header {
-    border-bottom: 1px dashed #ccc;
-}
-
 .nav-menu {
     .active {
         background-color: $secondary;
-        font-weight: bold;
+        // font-weight: bold;
     }
 }
 
@@ -59,7 +56,6 @@ body {
     backdrop-filter: blur(20px);
 }
 
-.main-footer,
 .career-timeline {
     border-top: 1px dashed #ccc;
 }
@@ -88,7 +84,7 @@ body {
     width: 3px;
     padding: 5px 10px;
     height: 25px;
-    border: 2px solid $primary;
+    border: 3px solid $primary;
     border-radius: 25px;
     opacity: 0.75;
     box-sizing: content-box;
@@ -122,6 +118,6 @@ body {
 }
 
 @font-face {
-    src: url(../fonts/Nothing.ttf);
-    font-family: Nothing;
+    src: url(../fonts/optimistic_display.ttf);
+    font-family: OptimisticDisplay;
 }
