@@ -12009,6 +12009,14 @@ body {
           backdrop-filter: blur(20px);
 }
 
+.main-header {
+  border-bottom: 1px dashed #ccc;
+}
+
+.main-footer {
+  border-top: 1px dashed #ccc;
+}
+
 .career-timeline {
   border-top: 1px dashed #ccc;
 }
